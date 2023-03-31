@@ -1,0 +1,233 @@
+@charset "utf-8";
+body{
+    margin: 0 auto;
+    border: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+title{
+    display: none;
+}
+button{
+    font-weight: 900;
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 20px 0;
+}
+
+/* 
+クラス属性のスタイル指定
+*/
+
+/* navigation */
+.navigation{
+        background-color:rgb(255, 255, 255);
+        overflow: scroll;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+}
+.navigation.on{
+    display: flex;
+}
+.navigation ul{
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+}
+.navigation li{
+    margin: 10px 20px;
+}
+#audio1,
+#audio2,
+#audio3,
+#audio4,
+#audio5,
+#audio_stop{
+        width: 300px;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        display: block;
+        border-radius: 5px;
+        margin: 20% auto;
+        padding: 25px;
+}
+.reset{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+
+/* 
+ID属性のスタイル指定
+*/
+#questionDisplay,
+#correctDisplay,
+#wrongDisplay{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-20%, -20%);
+}
+#questionDisplay,
+#questionDisplay.judgment,
+#questionDisplay.end.start,
+#correctDisplay,
+#wrongDisplay,
+#resultDisplay,
+#backgroundImg{
+    display: none;
+    width: 100vw;
+    height: 50vh;
+}
+#question{
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+    border: 3px solid black;
+    padding: 20px 0;
+}
+/* クラスが付いたら */
+#questionDisplay.start,
+#correctDisplay.judgment,
+#wrongDisplay.judgment,
+#resultDisplay.end{
+    display: block;
+}
+#hamburger{
+    background-image: url(https://o289.github.io/Quiz50/img/bars_24.svg);
+    background-color: #ddd;
+    background-size: 49px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+}
+#hamburger:hover{
+    background-color: gold;
+}
+#hamburger.on{
+    background-image: url(https://o289.github.io/Quiz50/img/cross_24.svg);
+    margin: 0;
+}
+#hamburger.off{
+display: none;
+}
+/* 結果に応じて背景を変える */
+#resultDisplay{
+    position: relative;
+}
+#resultDisplay.end.gold{
+    background-image: url(https://o289.github.io/Quiz50/img/gold.jpg);
+    color: #fff;
+}
+#resultDisplay.end.silver{
+    background-image: url(https://o289.github.io/Quiz50/img/silver.jpg.avif);
+    color: #000;
+}
+#resultDisplay.end.bronze{
+    background-image: url(https://o289.github.io/Quiz50/img/bronze.jpg);
+    color: #fff;
+}
+#resultDisplay.end.normal{
+    background-image: url(https://o289.github.io/Quiz50/img/normal.png);
+    color: #000;
+}
+#resultDisplay.end.gold,
+#resultDisplay.end.silver,
+#resultDisplay.end.bronze,
+#resultDisplay.end.normal{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/*  */
+#display.start,
+#display.judgment,
+#display.result{
+    display: none;
+}
+/* display-setting */
+
+
+
+#correctDisplay img,
+#wrongDisplay img{
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+}
+
+/* 最初の画面のボタン */
+#quiz01{
+    background-color: red;
+    color: #fff;
+}
+#quiz02{
+    background-color: blue;
+    color: #fff;
+}
+#quiz03{
+    background-color: green;
+    color: #fff;
+}
+#quiz04{
+    background-color: yellow;
+}
+#quiz05{
+    background-color: purple;
+    color: #fff;
+}
+#quiz06{
+    background-color: orangered;
+}
+#quiz07{
+    background-color: greenyellow;
+}
+#quiz08{
+    background-color: silver;
+}
+#quiz09{
+    background-color: aqua;
+}
+#quiz10{
+    background-color: aquamarine;
+}
+/* 選択肢ボタン */
+#submit0,
+#submit1,
+#submit2,
+#submit3{
+    background-color: black;
+    color: #fff;
+}
+/* Nextボタン */
+#correct,
+#wrong{
+    background-color: #fff;
+    color: black;
+    border: 2px solid black;
+}

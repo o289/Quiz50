@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>クイズ集</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://o289.github.io/Quiz50/style.css">
+</head>
+<body>
+    <div id="hamburger"></div>
+    <nav class="navigation">
+        <ul>
+            <li><button id="audio_stop">音楽なし</button></li>
+            <li><button id="audio1">音楽1</button></li>
+            <li><button id="audio2">音楽2</button></li>
+            <li><button id="audio3">音楽3</button></li>
+            <li><button id="audio4">音楽4</button></li>
+            <li><button id="audio5">音楽5</button></li>
+        </ul>
+    </nav>
+    <div id="display">
+        <h1>クイズ集</h1>
+        <button id="quiz02">Quiz about me <br> and what I like</button>
+        <button id="quiz01">ゲームクイズ</button>
+        <button id="quiz03">English Question</button>
+        <button id="quiz04">一般常識クイズ</button>
+        <button id="quiz05">プロ野球クイズ</button>
+    </div>
+    <div id="questionDisplay">
+        <h2 id="question">テキスト</h2>
+        <button id="submit0">text0</button>
+        <button id="submit1">text1</button>
+        <button id="submit2">text2</button>
+        <button id="submit3">text3</button>
+    </div>
+    <div id="correctDisplay">
+        <img src="https://o289.github.io/Quiz50/img/correct.png" alt="正解">
+        <h2>正解</h2>
+        <button id="correct">text</button>
+        <audio id="correct_audio">
+            <source src="https://o289.github.io/Quiz50/audio/Quiz-Correct_Answer.mp3">
+        </audio>
+    </div>
+    <div id="wrongDisplay">
+        <img src="https://o289.github.io/Quiz50/img/No_correct.png" alt="不正解">
+        <h2>不正解</h2>
+        <button id="wrong">text</button>
+        <audio id="wrong_audio">
+            <source src="https://o289.github.io/Quiz50/audio/Quiz-Wrong_Buzzer.mp3">
+        </audio>
+    </div>
+    <div id="resultDisplay">
+        <div class="reset">
+            <h2 id="result">kkkkkkkkkkkk</h2>
+            <button onclick="window.location.reload();">最初に戻る</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+        // ハンバーガーメニュー
+        $('#hamburger').click(function() {
+            $('#hamburger').toggleClass("on")
+            $('.navigation').toggleClass("on")
+        })
+    });
+    </script>
+    <script src="https://o289.github.io/Quiz50/index.js"></script>
+</body>
+</html>
