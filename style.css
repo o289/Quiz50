@@ -80,7 +80,6 @@ button{
 /* 
 ID属性のスタイル指定
 */
-#questionDisplay,
 #correctDisplay,
 #wrongDisplay{
     position: absolute;
