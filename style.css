@@ -5,6 +5,7 @@ body{
     padding: 0;
     display: block;
     text-align: center;
+    overflow-x: hidden;
 }
 ul{
     list-style: none;
@@ -63,7 +64,7 @@ button{
         text-align: center;
         display: block;
         border-radius: 5px;
-        margin: 20% auto;
+        margin: 15% auto;
         padding: 25px;
 }
 .reset{
