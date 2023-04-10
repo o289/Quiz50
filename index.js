@@ -1253,10 +1253,10 @@
             {
                 questionText: 'あなたはあきらよりマフラーを持っている',
                 questionAnswers: [
-                    'You have more scarves than Akira.',
+                    'You have better scarves than Akira.',
                     'You have more muffler than Akira.',
                     'You have more scarves than Akira.',
-                    'You have more scarves than Akira.'
+                    'You have most scarves than Akira.'
                 ],
                 correct: 'You have more scarves than Akira.'
             },
